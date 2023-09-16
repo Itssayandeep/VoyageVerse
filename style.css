@@ -95,6 +95,65 @@ section p {
     transform: scale(1.1);
 }
 
+/* Style for the dropdown menus */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sub-item {
+    position: relative;
+    width: max-content;
+}
+
+.nav-item:hover .sub-menu {
+    display:block;
+}
+
+.sub-menu li {
+    padding: 10px 20px;
+}
+
+.sub-menu li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Style for sub-dropdowns */
+.sub-sub-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style-type: none;
+    padding: 0;
+}
+
+.sub-sub-item {
+    position: relative;
+    width: max-content;
+}
+
+.sub-menu li.sub-item:hover .sub-sub-menu {
+    display: block;
+}
+
+.sub-sub-menu li {
+    padding: 10px 20px;
+}
+
+.sub-sub-menu li:hover {
+    background-color: #f9f9f9;
+}
+
+
 .menu-btn {
     position: fixed;
     top: 24px;
