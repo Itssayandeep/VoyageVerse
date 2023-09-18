@@ -1,0 +1,30 @@
+.cont {
+    margin: 0 40px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cont .tab {
+    position: relative;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .cont .tab:hover {
+    background-color: #f9f9f9;
+  }
+
+  .cont .tab .content {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .cont .tab.active .content {
+    display: block;
+  }
